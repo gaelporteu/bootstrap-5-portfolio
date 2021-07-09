@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap 5 Portfolio</title>
+  </head>
+  <body class="bg-light">
+    <!-- nav start -->
+    <nav class="navbar navbar-light bg-light shadow-sm fixed-top">
+      <div class="container-md">
+        <a class="navbar-brand text-success fw-bold fs-4" href="#"
+          >Maxime Gravier
+          <span class="text-muted fw-normal bg-gradient"
+            >&lt;i love to code/&gt;</span
+          >
+        </a>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary btn-success px-3 bg-gradient"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <li><a class="dropdown-item" href="#home">Home</a></li>
+            <li><a class="dropdown-item" href="#about">About</a></li>
+            <li><a class="dropdown-item" href="#services">Services</a></li>
+            <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+            <li>
+              <a class="dropdown-item" href="#testimonials">Testimonials</a>
+            </li>
+            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- home section start -->
+    <section class="home py-5" id="home">
+      <div class="container-md">
+        <div class="row bg-light align-items-center align-content-center">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="home-img text-center">
+              <img
+                class="rounded-circle mw-100"
+                src="imgs/profile3.png"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+            <div class="home-text">
+              <p class="text-muted mb-1">Hello I'm A</p>
+              <h1 class="text-success text-uppercase fs-1 fw-bold">
+                Web Developer
+              </h1>
+              <h2 class="fs-4">Maxime Gravier</h2>
+              <p class="text-muted mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus voluptate, voluptas blanditiis perspiciatis repellat
+                nobis debitis soluta molestias nulla, repellendus officiis
+                veniam minima a ipsum est aliquam! Officiis, ratione inventore!
+              </p>
+              <a class="btn btn-success px-3 mt-3 bg-gradient" href="#portfolio"
+                >My Work</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- about section start -->
+    <section class="about bg-white py-5" id="about">
+      <div class="container-md py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">About Me</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-text">
+              <h3 class="fs-4 mb-3">
+                Lorem ipsum, dolor sit amet consectetur?
+              </h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident nisi assumenda cum mollitia exercitationem vitae eaque
+                incidunt, hic vero maxime!
+              </p>
+            </div>
+            <div class="row text-center text-uppercase my-3">
+              <div class="col-sm-4">
+                <div class="fact-item">
+                  <h4 class="fs-1 fw-bold">100</h4>
+                  <p class="text-muted">Projects Completed</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="fact-item">
+                  <h4 class="fs-1 fw-bold">100</h4>
+                  <p class="text-muted">Happy Clients</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="fact-item">
+                  <h4 class="fs-1 fw-bold">100</h4>
+                  <p class="text-muted">Positive Reviews</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="
+                  col-lg-12
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                "
+              >
+                <a href="#" class="btn btn-success me-5 bg-gradient"
+                  >Download Resume</a
+                >
+                <div class="social-links">
+                  <a href="#" class="text-dark me-2"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="text-dark me-2"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-dark me-2"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-dark me-2"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="about-text">
+              <div class="skill-item">
+                <h3 class="fs-6 text-uppercase mb-1 mt-3">html</h3>
+                <div class="progress" style="height: 5px">
+                  <div
+                    class="progress-bar bg-success bg-gradient"
+                    role="progressbar"
+                    style="width: 100%"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h3 class="fs-6 text-uppercase mb-1 mt-3">css</h3>
+                <div class="progress" style="height: 5px">
+                  <div
+                    class="progress-bar bg-success bg-gradient"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h3 class="fs-6 text-uppercase mb-1 mt-3">javascript</h3>
+                <div class="progress" style="height: 5px">
+                  <div
+                    class="progress-bar bg-success bg-gradient"
+                    role="progressbar"
+                    style="width: 85%"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h3 class="fs-6 text-uppercase mb-1 mt-3">bootstrap</h3>
+                <div class="progress" style="height: 5px">
+                  <div
+                    class="progress-bar bg-success bg-gradient"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- services section start -->
+    <section class="services py-5" id="services">
+      <div class="container-md py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">What I Do</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card text-center shadow-sm p-3 hover-img-scale">
+                <div class="card-body">
+                  <i class="fas fa-code text-success fs-3"></i>
+                  <h5 class="card-title fw-bold my-2">Web Development</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt, asperiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card text-center shadow-sm p-3">
+                <div class="card-body">
+                  <i class="fas fa-palette text-success fs-3"></i>
+                  <h5 class="card-title fw-bold my-2">Creative Design</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt, asperiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card text-center shadow-sm p-3">
+                <div class="card-body">
+                  <i class="fab fa-searchengin text-success fs-3"></i>
+                  <h5 class="card-title fw-bold my-2">SEO</h5>
+                  <p class="card-text text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt, asperiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section end -->
+
+    <!-- portfolio section start -->
+    <section class="portfolio py-5" id="portfolio">
+      <div class="container py-4">
+        <div class="row justify-content center">
+          <div class="col">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">My Latest Work</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                class="w-100 img-thumbnail"
+                src="/imgs/hauskey-thumbnail.png"
+                alt="Portfolio Item 1"
+              />
+              <h3 class="text-capitalize fs-5 my-2">Hauskey Landing Page</h3>
+              <p class="mb-4">
+                <a href="#" class="text-success text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                class="w-100 img-thumbnail"
+                src="/imgs/northtosouthmedia-thumbnail"
+                alt="Portfolio Item 1"
+              />
+              <h3 class="text-capitalize fs-5 my-2">North to South Media</h3>
+              <p class="mb-4">
+                <a href="#" class="text-success text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                class="w-100 img-thumbnail"
+                src="/imgs/unplugged-thumbnail"
+                alt="Portfolio Item 1"
+              />
+              <h3 class="text-capitalize fs-5 my-2">Unplugged</h3>
+              <p class="mb-4">
+                <a href="#" class="text-success text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                class="w-100 img-thumbnail"
+                src="/imgs/lolcat-thumbnail.jpg"
+                alt="Portfolio Item 1"
+              />
+              <h3 class="text-capitalize fs-5 my-2">LOLCAT Clock</h3>
+              <p class="mb-4">
+                <a href="#" class="text-success text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                class="w-100 img-thumbnail"
+                src="/imgs/kember-thumbnail.jpg"
+                alt="Portfolio Item 1"
+              />
+              <h3 class="text-capitalize fs-5 my-2">Kember Flooring Website</h3>
+              <p class="mb-4">
+                <a href="#" class="text-success text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                class="w-100 img-thumbnail"
+                src="/imgs/jubilee-thumbnail.jpg"
+                alt="Portfolio Item 1"
+              />
+              <h3 class="text-capitalize fs-5 my-2">Jubilee Austen Website</h3>
+              <p class="mb-4">
+                <a href="#" class="text-success text-decoration-none"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!-- testimonials section start -->
+    <section
+      class="testimonial-section d-flex align-items-center bg-white my-5 py-5"
+      id="testimonials"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 testim-img">
+            <div class="img-box">
+              <div class="circle bg-success"></div>
+              <div class="img-box-inner">
+                <img src="imgs/person2.png" alt="Testimonial 1" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              id="myCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-interval="2000"
+            >
+              <div class="carousel-inner">
+                <div
+                  class="carousel-item testim-img active"
+                  data-color="fb9c9a"
+                  data-img="imgs/person1.png"
+                >
+                  <p class="fs-6">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Perferendis magni corporis aperiam reprehenderit quibusdam
+                    numquam sint amet natus inventore sequi, dicta pariatur
+                    veniam ipsam, dolorum repellat. Cum voluptas praesentium
+                    corporis.
+                  </p>
+                  <h3 class="fs-6 text-capitalize">
+                    Peter Johnsson <span class="text-muted">web developer</span>
+                  </h3>
+                </div>
+                <div
+                  class="carousel-item testim-img"
+                  data-color="fb9c9a"
+                  data-img="imgs/person2.png"
+                >
+                  <p class="fs-6">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Perferendis magni corporis aperiam reprehenderit quibusdam
+                    numquam sint amet natus inventore sequi, dicta pariatur
+                    veniam ipsam, dolorum repellat. Cum voluptas praesentium
+                    corporis.
+                  </p>
+                  <h3 class="fs-6 text-capitalize">
+                    Sabrina Vanderley
+                    <span class="text-muted">chief operating officer</span>
+                  </h3>
+                </div>
+                <div
+                  class="carousel-item testim-img"
+                  data-color="fb9c9a"
+                  data-img="imgs/person3.png"
+                >
+                  <p class="fs-6">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Perferendis magni corporis aperiam reprehenderit quibusdam
+                    numquam sint amet natus inventore sequi, dicta pariatur
+                    veniam ipsam, dolorum repellat. Cum voluptas praesentium
+                    corporis.
+                  </p>
+                  <h3 class="fs-6 text-capitalize">
+                    Leslie Newman
+                    <span class="text-muted">chief technology officer</span>
+                  </h3>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="prev"
+              >
+                <i class="fas fa-chevron-left"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="next"
+              >
+                <i class="fas fa-chevron-right"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials section end -->
+
+    <!-- contact section start -->
+    <section class="contact py-5" id="contact">
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">Contact Me</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="contact-item d-flex align-items-baseline mb-3">
+              <div class="icon fs-4 text-success">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5">Email</h3>
+                <p class="text-muted m-0">example@maximegravier.ca</p>
+              </div>
+            </div>
+            <div class="contact-item d-flex align-items-baseline mb-3">
+              <div class="icon fs-4 text-success">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5">Phone</h3>
+                <p class="text-muted m-0">416 123 4567</p>
+              </div>
+            </div>
+            <div class="contact-item d-flex align-items-baseline mb-3">
+              <div class="icon fs-4 text-success">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5">Location</h3>
+                <p class="text-muted m-0">2000 Yonge St, Toronto, ON Canada</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="contact-form">
+              <form action="">
+                <div class="row">
+                  <div class="col-lg-6 mb-4">
+                    <input
+                      type="text"
+                      placeholder="Enter Your Name"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                    />
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <input
+                      type="email"
+                      placeholder="Enter Your Email"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mb-4">
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mb-4">
+                    <textarea
+                      type="text"
+                      placeholder="Message"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                      rows="10"
+                      cols="30"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mb-4">
+                    <button
+                      type="button"
+                      class="btn btn-success bg-gradient px-3"
+                    >
+                      Press Here to Begin Work
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer section begin -->
+    <footer class="footer border-top py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="m-0 text-center text-muted">
+              &copy; 2021 Gaël Porteu de La Morandière
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section begin -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const myCarousel = document.getElementById("myCarousel");
+
+      myCarousel.addEventListener("slid.bs.carousel", function () {
+        const activeItem = this.querySelector(".active");
+        document.querySelector(".testim-img img").src =
+          activeItem.getAttribute("data-img");
+        document.querySelector(".testim-img .circle").style.backgroundColor =
+          activeItem.getAttribute("data-color");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.home .row {
+  min-height: 50vh;
+}
+
+.testim-img .img-box {
+  max-width: 360px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.testim-img .circle {
+  height: 360px;
+  width: 360px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  bottom: 0;
+}
+
+.testim-img .img-box-inner {
+  position: relative;
+  border-radius: 0 0 180px 180px;
+  overflow: hidden;
+  width: 360px;
+  background-size: cover;
+  background-position: center;
+}
+
+.testim-img .img-box-inner img {
+  max-width: 350px;
+  max-height: 450px;
+}
+
+.testimonial-section .carousel-inner {
+  margin-bottom: 20px;
+}
+
+.testimonial-section .carousel-control-next {
+  margin-right: 10px;
+}
+
+.testimonial-section .carousel-control-next, 
+.testimonial-section .carousel-control-prev {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background-color: green;
+  display: inline-flex;
+  border-radius: 50%;
+}
+
+.testimonial-section .carousel-control-next i, 
+.testimonial-section .carousel-control-prev i {
+  width: 15px;
+  height: 15px;
+}
+
+/* Responsive */
+@media(max-width:991px) {
+     .testim-img {
+       transform: scale(.9);
+     }
+}
+
+@media(max-width:767px) {
+  .testimonial-section .carousel-control-prev {
+    margin-left: 20px;
+  }
+}
